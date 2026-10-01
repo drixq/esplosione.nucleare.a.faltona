@@ -1,1 +1,51 @@
 
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f8eee3;
+}
+
+#start-screen,
+#game-screen {
+    text-align: center;
+}
+
+#game-screen {
+    display: none;
+}
+
+h1 {
+    font-size: 120px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 22px;
+}
+
+button {
+    font-size: 20px;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 15px;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
