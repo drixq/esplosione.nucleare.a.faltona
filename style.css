@@ -28,7 +28,13 @@ h1 {
 h2 {
     font-size: 40px;
 }
+#start-screen h2 {
+    font-size: 42px;
+}
 
+#start-screen p {
+    font-size: 18px;
+}
 p {
     font-size: 22px;
 }
@@ -41,9 +47,14 @@ button {
     border: none;
     border-radius: 15px;
 
-    background-color: white;
+    background-color: red;
+    color: white;
 
     cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 button:hover {
