@@ -165,3 +165,55 @@ button:hover {
     }
 
 }
+/* CONTENITORE DELLA CONVERSAZIONE */
+
+#game-screen {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* BENJAMIN E NUVOLA AFFIANCATI */
+
+#conversation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+/* SCRITTA CHE PULSA */
+
+#continue-text {
+    margin: 0;
+    font-size: 14px;
+    color: #8b7768;
+    animation: pulse 1.5s ease-in-out infinite;
+    text-align: center;
+    pointer-events: none;
+}
+
+/* ANIMAZIONE */
+
+@keyframes pulse {
+    0%, 49% {
+        opacity: 1;
+    }
+
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+/* ADATTAMENTO AGLI SCHERMI PICCOLI */
+
+@media (max-width: 700px) {
+    #conversation {
+        gap: 15px;
+    }
+
+    #continue-text {
+        font-size: 12px;
+    }
+}
