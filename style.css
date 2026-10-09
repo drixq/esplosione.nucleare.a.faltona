@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #f8eee3;
-    color: #30251f;
+    color: #941919;
 }
 
 
@@ -188,8 +188,8 @@ button:hover {
 #continue-text {
     margin: 0;
     font-size: 14px;
-    color: #8b7768;
-    animation: pulse 1.5s ease-in-out infinite;
+    color: ##941919;
+animation: pulse 0.7s steps(1, end) infinite;
     text-align: center;
     pointer-events: none;
 }
