@@ -12,26 +12,23 @@ const dialogues = [
 
 
 function startGame() {
+    dialogueStep = 0;
 
     document.getElementById("start-screen").style.display = "none";
-
     document.getElementById("game-screen").style.display = "flex";
+
+    document.getElementById("dialogue").textContent = dialogues[0];
 }
 
 
 function nextDialogue() {
-
     dialogueStep++;
 
     if (dialogueStep < dialogues.length) {
-
         document.getElementById("dialogue").textContent =
             dialogues[dialogueStep];
-
     } else {
-
-        console.log("è ora del cibo!");
-
+        // Per ora fermiamo i dialoghi all'ultima frase.
+        dialogueStep = dialogues.length - 1;
     }
-
 }
