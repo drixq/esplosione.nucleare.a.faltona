@@ -13,22 +13,30 @@ const dialogues = [
 
 function startGame() {
     dialogueStep = 0;
+    firstClick = true;
 
     document.getElementById("start-screen").style.display = "none";
     document.getElementById("game-screen").style.display = "flex";
 
     document.getElementById("dialogue").textContent = dialogues[0];
+    document.getElementById("continue-text").style.display = "block";
 }
 
 
+let firstClick = true;
+
 function nextDialogue() {
+    if (firstClick) {
+        document.getElementById("continue-text").style.display = "none";
+        firstClick = false;
+    }
+
     dialogueStep++;
 
     if (dialogueStep < dialogues.length) {
         document.getElementById("dialogue").textContent =
             dialogues[dialogueStep];
     } else {
-        // Per ora fermiamo i dialoghi all'ultima frase.
         dialogueStep = dialogues.length - 1;
     }
 }
