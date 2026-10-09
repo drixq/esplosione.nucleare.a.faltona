@@ -93,11 +93,11 @@ button:hover {
 
 #horse {
     display: block;
-    width: 48%;
-    max-width: 500px;
+    width: 55%;
+    max-width: 600px;
     height: auto;
     object-fit: contain;
-    flex: 0 1 48%;
+    flex-shrink: 0;
 }
 
 
@@ -184,14 +184,15 @@ button:hover {
         gap: 14px;
     }
 
-    #horse {
-        width: 45%;
-        max-width: 360px;
-        flex-basis: 45%;
-    }
-
+   #horse {
+    width: 52%;
+    max-width: 460px;
+    flex-basis: 52%;
+    height: auto;
+    flex-shrink: 0;
+}
     #dialogue-box {
-        flex-basis: 55%;
+        flex-basis: 48%;
         padding: 18px;
         border-radius: 22px;
     }
