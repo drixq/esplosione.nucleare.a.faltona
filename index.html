@@ -12,32 +12,35 @@
 
 <body>
 
-   <div id="start-screen">
+    <div id="start-screen">
+        <h1>🐴</h1>
 
-    <h1>🐴</h1>
+        <h2>🚨 ATTENZIONE 🚨</h2>
 
-    <h2>🚨 ATTENZIONE 🚨</h2>
+        <p>attenzione a quello che fai…</p>
 
-    <p>attenzione a quello che fai…</p>
+        <button onclick="startGame()">GIOCA</button>
+    </div>
 
-    <button onclick="startGame()">GIOCA</button>
+    <div id="game-screen" onclick="nextDialogue()">
 
-</div>
+        <div id="conversation">
 
+            <img id="horse"
+                 src="images/cavallo/cavallo%20dritto.PNG"
+                 alt="Benjamin">
 
-  <div id="game-screen">
+            <div id="dialogue-box">
+                <p id="dialogue">eilà donzella, ho fame!</p>
+            </div>
 
-    <img id="horse" src="images/cavallo/cavallo%20dritto.PNG" alt="Cavallo">
+        </div>
 
-    <p id="dialogue">eilà donzella, ho fame! </p>
+        <p id="continue-text">clicca ovunque per continuare…</p>
 
-    <button id="dialogue-button" onclick="nextDialogue()">CLICCA</button>
-
-</div>
-
+    </div>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
