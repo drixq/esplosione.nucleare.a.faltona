@@ -93,8 +93,8 @@ button:hover {
 /* BENJAMIN */
 
 #horse {
-    width: 35%;
-    max-width: 350px;
+    width: 42%;
+    max-width: 420px;
     height: auto;
     object-fit: contain;
     flex-shrink: 0;
@@ -152,19 +152,19 @@ button:hover {
     font-size: 14px;
     text-align: center;
     pointer-events: none;
-    animation: blink 0.8s steps(1, end) infinite;
+  animation: blink 1.4s ease-in-out infinite;
 }
 
 
 /* ANIMAZIONE LAMPEGGIANTE */
 
 @keyframes blink {
-    0%, 49% {
-        opacity: 1;
+    0%, 100% {
+        opacity: 0;
     }
 
-    50%, 100% {
-        opacity: 0;
+    50% {
+        opacity: 1;
     }
 }
 
@@ -182,10 +182,10 @@ button:hover {
         gap: 16px;
     }
 
-    #horse {
-        width: 35%;
-        max-width: 260px;
-    }
+#horse {
+    width: 40%;
+    max-width: 300px;
+}
 
     #dialogue-box {
         padding: 18px;
