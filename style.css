@@ -247,3 +247,32 @@ button:hover {
         font-size: 12px;
     }
 }
+/* TRANSIZIONE PIXEL RETRÒ */
+
+#pixel-transition {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    pointer-events: none;
+}
+
+.pixel-block {
+    background-color: #941919;
+    transform: scale(0);
+    transition: transform 0.25s steps(1, end);
+}
+
+.pixel-block.active {
+    transform: scale(1);
+}
+
+.pixel-block:nth-child(3n) {
+    background-color: #f8eee3;
+}
+
+.pixel-block:nth-child(3n + 1) {
+    background-color: #ead8c6;
+}
